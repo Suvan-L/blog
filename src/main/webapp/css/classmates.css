@@ -1,0 +1,102 @@
+body,html{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height:100%;
+
+    background-image:url(../img/register_background.jpg);
+}
+.main{
+    min-height: 100%;
+}
+.footer{
+    position:relative;
+    bottom:0;
+
+    width:100%;
+    min-height:125px;
+
+    background-color:black;
+}
+/***********************BootStrap样式覆盖*********************************/
+.container-fluid{
+    /*BootStrap容器*/
+
+    min-height:100%;        /*使页脚一定位于容器底部*/
+
+}
+
+
+/**************************************************中部****************************************************/
+
+.ma-top{
+    margin: 50px 0;
+
+    color: rgb(120, 63, 4);
+    font-size: 24px;
+    line-height: 28.8px;
+}
+    .musicButton{
+        border-radius: 100%;
+        padding: 5px;
+
+        background-color: white;
+    }
+.main-content{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+
+    margin-bottom: 125px;
+
+    background-color:rgba(192,192,192,0.1);  /*背景色*/
+}
+.ma-left{
+    float: left;
+
+
+    max-width: 400px;
+
+    /*background-color: red;*/
+}
+    .ma-le-introduction{
+       margin: 100px 50px 50px 50px;
+
+        font-size: 16px;
+
+
+        /*background-color: orange;*/
+    }
+.ma-right{
+    float: left;
+
+    /*background-color: yellow;*/
+}
+    .star{
+        color: red;
+    }
+    .checkFont{                              /*表格3列*/
+        font-size:12px;
+        font-family:YouYuan;
+        text-align: center;
+
+        color:red;
+    }
+    .success-green{
+        /*------JS验证,成功通过样式*/
+        font-size: 20px;
+        color: green;
+    }
+/**************************************************底部****************************************************/
+.statement{
+    /*版权声明*/
+    display: inline-block;
+
+    margin-top: 85px;           /*调整文字位置*/
+    margin-left: 150px;
+
+    color:#777;
+    font-size: 13px;
+}

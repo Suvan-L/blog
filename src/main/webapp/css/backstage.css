@@ -1,0 +1,105 @@
+body{
+    padding: 0px;
+}
+
+
+/*************************顶部***************************/
+
+.top-left{
+    /*顶部-左边*/
+    position: absolute;
+    top:0px;
+
+    height: 60px;
+}
+.top-left img{
+    position:relative;
+    top:5px;
+    left:5px;
+
+    width:50px;
+
+}
+.top-left i{
+    position: relative;
+    top:15px;
+    left:100px;
+
+    font-size: 30px;
+
+    color: #009688;
+}
+.top-middle{
+    /*顶部-中部*/
+    position: absolute;
+    left: 200px;
+
+
+}
+.top-middle>ul{
+    background-color: #23262e;
+}
+.top-right{
+    /*顶部-右部*/
+    position: absolute;
+    right:0px;
+}
+.top-right>ul{
+    background-color: #23262e;
+}
+.top-right img{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 100%;  /*原形[圆角边框]*/
+}
+
+.body-table{
+    position: relative;
+    top:50px;
+    left:100px;
+
+    width:80%;
+    height:80%;
+
+}
+.table-btn{
+    position: relative;
+    float:right;
+}
+
+
+/*************************左侧***************************/
+.left-menu-all{
+    /*左侧菜单栏*/
+}
+.left-menu{
+    /*左侧菜单样式*/
+    display: none;
+}
+
+/*************************中部***************************/
+.layui-tab{
+    /*选项卡[置顶]*/
+    margin: 0px;
+}
+.layui-tab-content{
+    /*选项卡的内容*/
+    height: 644px;
+
+    padding: 0;
+
+
+}
+
+/*************************底部***************************/
+.layui-footer >p{
+    position: relative;
+    top:15%;
+
+
+    font-family:YouYuan;
+    font-size: 20px;
+    text-align: center;
+}
+

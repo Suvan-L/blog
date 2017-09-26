@@ -1,7 +1,10 @@
+# IDEA自动生成文件
 .idea/
 
+# 临时文件,日志文件
 logs/
 out/
 target/
 
+# maven自动生成文件
 *.iml

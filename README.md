@@ -1,5 +1,5 @@
-# Neubbs
-东软校内 BBS
+# Blog system
+个人博客系统
 
 # 技术栈
 ## 后端

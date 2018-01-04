@@ -1,10 +1,9 @@
 
-# 个人博客系统
-![image](https://github.com/Suvan-L/blog/blob/master/src/main/webapp/img/index_Screenshot.png)
-![image](https://github.com/Suvan-L/blog/blob/master/src/main/webapp/img/register_Screenshot.png)
+# java 后台
 
 
-## 后端
+
+## 后端使用
 + IDE: IntelliJ IDEA 2016.3.5
 + Java: jdk1.8.0_65
 + 服务器：Tomcat-8.0.41
@@ -12,12 +11,8 @@
 + 版本控制：Github Git2.7.2.0
 + 数据库：MySQL57
 
-## 前端
-+ 归档页：Bookstrap(栅格系统)
-+ 后台管理：Layui
-+ 其余页面: html + css + jQuery
 
-# 目录结构
+## 目录结构
 ```
 blog                                                                                                                                            
 ├─src                             【java源码】                                                  
@@ -54,8 +49,3 @@ blog
 │  │          └─lib                          【编译后jar包】                 
 │  └─test                          【jUnit测试用例】                                       
 ```
-
-# 数据库设计
-+ 用户表
-+ 评论表
-+ 文章表

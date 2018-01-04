@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                  <!--设置IE兼容模式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--开启BootStrap移动设备响应式-->
+    <meta name="description" content="Blog Archiving">
+    <meta name="author" content="Suvan">
+    <title>Archiving</title>
+
+
+    <!--CSS-->
+    <link href="../css/archiving.css" rel="stylesheet">
+    <link href="../frame/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap-->
+
+    <!--js-->
+    <script src="../js/archiving.js"></script>
+    <script src="../frame/jQuery/jQuery-1.12.4.js"></script> <!--jQuery-->
+
+
+</head>
+<body onload="loadHTML()">
+   <div class="container">
+       <div class="main">
+           <div class="row">
+               <div class="col-md-1 col-md-push-11 col-sm-push-5 col-xs-push-4">
+                   <img src="../img/suvan.jpg" class="ma-img">
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12">
+
+                   <div class="ma-leftBox">
+                       <div class="ma-leftBox-title">文章分类</div>
+                       <div class="ma-leftBox-content">
+                          <a href="">第一个文章分类</a>
+                       </div>
+                   </div>
+                   <div class="ma-leftBox hidden-xs"><!--xs屏幕隐藏-->
+                       <div class=ma-leftBox-title">网站标签</div>
+                       <div class="ma-leftBox-content" id="webTab">
+                           <a>个人建站</a>
+                           <a>Suvan</a>
+                           <a>爬虫</a>
+                           <a>liushuwei@gmail.com</a>
+                           <a>Google</a>
+                           <a>维护网站</a>
+                           <a>找工作</a>
+                           <a>Github Daily</a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-md-8 col-md-push-1 col-sm-12 col-xs-12">
+                   <h1 class="h1">Article</h1>
+
+                   <!-- 文章列表遍历-->
+                   <ul class="ma-right-articleList" id="articleList">
+                        <div id="pageIndex${page}">
+                            <li>
+                                <span>2018-01-04</span>
+                                <a href="" title="文章标题">文章标题</a>
+                            </li>
+                        </div>
+                   </ul>
+
+                   <!--页数-->
+                   <div class="ma-page" id="Paging">
+                       <ul class="pagination pagination-lg">
+                          <li><a>1</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="footer">
+       <p class="fo-statement">
+           Copyright © 2017 Suvan. All rights reserved.
+           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+           liushuwei0925@gmail.com
+       </p>
+   </div>
+</body>
+</html>

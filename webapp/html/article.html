@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                  <!--设置IE兼容模式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--开启BootStrap移动设备响应式-->
+    <meta name="description" content="Blog Article">
+    <meta name="author" content="Suvan">
+    <title>Article</title>
+
+    <!--CSS-->
+    <link href="../css/article.css" rel="stylesheet" type="text/css">
+    <link href="../extend/icon/iconfont.css" rel="stylesheet" type="text/css" >  <!--阿里巴巴矢量icon图标-->
+
+    <!--js -->
+    <script src="../js/article.js"></script>
+    <script src="../frame/jQuery/jQuery-1.12.4.js"></script>            <!--jQuery-->
+    <script src="../frame/jQuery/jquery.animate-colors.js"></script>    <!--jQuery颜色动画-->
+    <script src="../js/marked.js"></script>           
+
+</head>
+<body onload="loadHTML()">
+    <div class="header">
+        <div class="he-inner">
+            <span class="he-in-sign">Suvan</span>
+            <div class="he-in-button">
+                <a href="../index">首页</a>
+                <a href="../toArchiving">归档</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="ma-article">
+            <div class="ma-ar-title">文章标题</div>
+            <div class="ma-ar-meta"> 发表于 2017-09-03 |  分类于 Life  字数统计 40 |  阅读时长 1</div>
+            <div class="ma-ar-content">文章内容</div>
+        </div>
+        <div class="ma-comment">
+            <div class="ma-co-input">
+                <textarea class="inputComment-textarea" maxlength="300" placeholder="请输入评论...."></textarea>
+
+                <button class="ma-co-publishButton" id="pulishCommentButton">发表</button>
+            </div>
+            <div class="ma-co-message">
+                    <div class="message">
+                        <img src="../img/suvan.jpg" class="message-userimg">
+                        <div class="me-content">
+                            <span class="me-username" id="user1">user1:</span>
+                            &emsp;这篇文章挺好看的
+                        </div>
+                        <div class="me-publictime">
+                            2016/09/25 23:54:32
+                        </div>
+                        <div class="me-operate" id="operate${comment.id}">
+                            <i class="icon iconfont icon-dianzandian" type="agree" ></i><span>2849</span>&emsp;
+                            <i class="icon iconfont icon-handagainst" type="oppose"></i><span>2000</span>
+                         </div>
+                    </div>
+                <div class="message">
+                        <img src="../img/suvan.jpg" class="message-userimg">
+                        <div class="me-content">
+                            <span class="me-username" id="user2">user2:</span>
+                            &emsp;这篇文章挺好看的12312312313212312312312312312312
+                        </div>
+                        <div class="me-publictime">
+                            2016/09/25 23:54:44
+                        </div>
+                    <div class="me-operate" id="operate1">
+                        <i class="icon iconfont icon-dianzandian" type="agree" ></i><span>31</span>&emsp;
+                        <i class="icon iconfont icon-handagainst" type="oppose"></i><span>8889</span>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="fo-statement">
+            © 2017  liushuwei
+            高调做事,低调做人
+        </div>
+    </div>
+    <div class="skidding">
+
+    </div>
+
+</body>
+</html>

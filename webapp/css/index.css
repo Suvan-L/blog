@@ -1,135 +1,204 @@
-body{
-    /*padding-top: 50px;*/
+body {
     margin: 0px;
     border: 0px;
     padding: 0px;
 
+    min-height: 100%;
+
     background: url(../img/background.jpg);
-    /*background: url(../img/street.jpg) no-repeat;     !*背景图,无重复*!*/
-    /*background-size: 100% 100%;                       !*div框内拉伸,使其符合容器大小*!*/
 }
-/**************************************************开头动画*************************************************/
-.animationScope{
+
+.container {
+    display: none;
+}
+/*
+ * ***********************************************
+ * animationScope(动画范围)
+ *      - an-image(动画头像)
+ *      - ballFirst(小球 1)
+ *      - ballSecond(小球 2)
+ *      - ballThird(小球 3)
+ * ***********************************************
+ */
+.animationScope {
     position:absolute;
-    left:50%;
-    top:50%;
+    margin: auto;
 
-    width: 200px;
-    height: 200px;
+    left: 50%;
+    top: 50%;
 
-    margin:-100px 0 0 -100px;
+    width: 100px;
+    height: 100px;
+
+    margin: -50px 0 0 -50px;
 }
-    .an-img{
-        /*动画头像*/
+    .an-image {
         margin: 20px 0 0 20px;
 
         width:100px;
         height:100px;
     }
-    .ballOne{/*小球1*/  position: absolute;  border-radius: 100%;/*圆形div*/  height:10px;  width:10px;  background-color: blue;  }
-    .ballSecond{/*小球2*/  position: absolute;  border-radius: 100%;  height:10px;  width:10px;  background-color: blue;  }
-    .ballThird{/*小球3*/  position: absolute;  border-radius: 100%;  height:10px;  width:10px;  background-color: blue;  }
-/**************************************************顶部****************************************************/
-.header{ /*顶部*/  min-width: 500px;display: none;}
-    .he-navigation {
-        /*顶部导航*/
-        width: 100%;
-        height: 45px;
-    }
-        .he-nav-sign{
-            /*顶部标识*/
-            margin: 10px 0 0 40px;
+    .ballFirst {position: absolute; border-radius: 100%; height:10px; width:10px; background-color: blue;  }
+    .ballSecond {position: absolute; border-radius: 100%; height:10px; width:10px; background-color: blue;  }
+    .ballThird {position: absolute; border-radius: 100%; height:10px; width:10px; background-color: blue;  }
+
+/*
+ * ***********************************************
+ * header(页面顶部)
+ *   - he-navigation(导航栏)
+ *       - he-navigation span(Suvan 标志)
+ *       - he-navigation a(顶部导航栏（a 标签）)
+ *       - he-navigation a:hover
+ *
+ * ***********************************************
+ */
+.header {}
+    .he-navigation {}
+        .he-navigation span {
+            padding: 5px 0;
             border-top: 2px solid black;
             border-bottom: 2px solid black;
-            padding: 5px 0;
-
+            margin: 10px 0 0 40px;
+           
             font-size: 22px;
             font-weight: bolder;
 
             display: inline-block;
         }
-        .he-nav-username{
-            float:right;
-        }
-        .he-navigation a{
-            /*顶部导航内按钮*/
-            float: right;                                           /*第一个向右边浮动,然后依次向左排列*/
-            padding: 10px 20px 15px 20px;                           /*内边距：上 右  下 左*/
+        .he-navigation a {
+            float: right;
+            padding: 10px 20px 15px 20px;
 
-            text-align: center;                                     /*字体居中*/
-            font-family:"YouYuan";
             font-size: 17px;
-            letter-spacing: 1.5px;                                  /*字体间距*/
-            color: black;                                           /*浅蓝色*/
-            text-decoration: none;                                  /*(a标签)去除下划线*/
-
-            background-color: transparent;                          /*透明背景*/
+            font-family:"YouYuan";
+            letter-spacing: 1.5px;
+            text-align: center;                    
+            color: black;
+        
+            background-color: transparent;
         }
-        .he-navigation a:hover{
+        .he-navigation a:hover {
             color: #01AAED;
-            /*background-color:rgba(0,0,0,0.5);  !*(red 值, green 值, blue 值【白色】 alpha【透明】 值)*!*/
-        }
-/**************************************************中部****************************************************/
-.main{  /*中部*/margin: 20px 100px;display: none;}
-    .ma-user{ /*用户模块*/ }
-        .u-img{
-            /*用户头像*/
-            margin: 0 auto;
-            border-radius: 100%;                                   /*圆形边框*/
-
-            width:100px;
-            height:100px;
-
-            display:block;                                          /*img标签变为块级元素*/
+            text-decoration: none;
         }
 
-    .ma-articles{ /*文章列表列表*/  margin: 40px 0;  }
-        .article{
-            /*文章*/
-            margin:0 auto 60px auto;                                 /*div内水平居中*/
-            border:1px solid #eeeeee;
+/*
+ * ***********************************************
+ * main(页面中部)
+ *      - ma-image(头像)
+ *      - ma-articles(文章列表)
+ *          - article(每篇文章)
+ *          - article + article(兄弟选择器（二选其后）)
+ *             - a-title(文章标题)
+ *             - a-date(文章发布日期)
+ *             - a-content(文章内容)
+ * ***********************************************
+ */
+.main{}
+    .ma-image > img {
+        border-radius: 100%;
+        margin: 0 auto;               
+
+        width: 100px;
+        height: 100px;
+
+        display:block;
+    }
+    .ma-articles { margin: 40px 0;}
+        .article {
             padding: 50px;
-            box-shadow:1px 1px 3px #aaaaaa;                 /*阴影:水平,垂直,模糊举例,阴影尺寸*/
+            border:1px solid #eeeeee;
+            margin:0 auto 60px auto;
 
-            max-width: 800px;
-            min-width: 200px;
-
-            /*background-color: #262a30;*/
+            box-shadow:1px 1px 3px #aaaaaa;
         }
-            .article a{  text-decoration: none;      /*去除下划线*/  }
-            .article + .article{ /*兄弟选择器：当两个在一起时选择后面这个*/margin-top: 25px;}
+        .article + .article { margin-top: 25px;}
             .a-title{
-                /*文章标题*/
                 margin-bottom:20px;
 
                 font-size: 26px;
                 color: #555;
             }
-            .a-meta{
-                /*文章变化*/
+            .a-date{
                 margin: 10px 0 20px 0;
 
                 font-size: 12px;
                 color:#999;
             }
             .a-content{
-                /*文章内容*/
                 padding-bottom: 10px;
 
                 font-size:13px;
-                line-height: 2;                         /*行高*/
+                line-height: 2;                   
             }
-            .a-readButton{ /*阅读全文按钮*/  margin:10px 0 5px 0;  }
-/**************************************************底部****************************************************/
+    
+
+/*
+ * ***********************************************
+ * footer(页脚)
+ *      - fo-statement(底部声明)   
+ * ***********************************************
+ */
 .footer {
     border-top: 2px solid #f2f2f2;
 
-    min-width: 500px;
-    min-height: 100px;
-
     text-align: center;
-
-    display: none;
-    /*background-color: #f5f5f5;*/
 }
-    .fo-statement{ /*底部声明*/  padding-top: 35px;  }
+    .fo-statement { 
+        padding: 15px 0px;  
+    }
+
+
+/*
+ * ***********************************************
+ * 响应式 (屏幕最大 750 之下)
+ * ***********************************************
+ */
+ @media screen and (max-device-width: 970px){
+
+    .an-image {
+        height: 75px;
+        width: 75px;
+    }
+
+   .he-navigation span {
+        margin: 10px 0 0 10px;
+
+        font-size: 16px;
+   }
+   .he-navigation a {
+        padding: 15px 10px 0 0;
+
+        font-size: 12px;
+   }
+
+   .ma-image > img {
+        width: 75px;
+        height: 75px;
+   }
+
+   .article {
+        padding: 20px;
+   }
+       .a-title{
+            margin-bottom:10px;
+            font-size: 17px;
+        }
+        .a-date{
+            margin: 10px 0 20px 0;
+
+            font-size: 8px;
+            color:#999;
+        }
+        .a-content{
+            padding-bottom: 10px;
+
+            font-size:11px;
+            line-height: 2;                   
+        }
+
+    .fo-statement { 
+        font-size: 1px;
+    }
+}
+

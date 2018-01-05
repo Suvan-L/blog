@@ -6,4 +6,3 @@
 	- [ ] ruby
 	- [ ] phython
 	- [ ] go
-- 博客网址: http://www.liushuwei.cn/blog/

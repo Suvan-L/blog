@@ -13,7 +13,7 @@ function loadHTML(){
 function pageAnimation() {
 
     //1.小球跑动动画(注意:三个小球是异步的)
-    ballSport($(".ballOne"),500);
+    ballSport($(".ballFirst"),500);
     ballSport($(".ballSecond"),600);
     ballSport($(".ballThird"),700);
 
@@ -51,9 +51,7 @@ function pageAnimation() {
     function showIndexPage(){
         $(".animationScope").css("display","none");
 
-        $(".header").fadeIn();
-        $(".main").fadeIn();
-        $(".footer").fadeIn();
+        $(".container").fadeIn();
     }
 
 

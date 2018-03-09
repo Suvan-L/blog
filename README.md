@@ -1,9 +1,2 @@
-
 # 个人博客
-- 前后端分离
-- 后端提供 API 
-  - [ ] java
-  - [ ] ruby
-  - [ ] phython
-  - [ ] go
-  - [ ] php
+- 使用 Ruby On Rails 实现个人博客系统
